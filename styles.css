@@ -173,7 +173,7 @@ br, table {
 #curtainText{
 	display: none;
 	margin-left: 100px;
-	margin-right: 100px
+	margin-right: 100px;
 	border: solid 2px rgb(128, 128, 128);
 	border-radius: 5px 5px 5px 5px;
 }
