@@ -4,11 +4,19 @@
     	<title>Arya T Gupta</title>
         <link rel="shortcut icon" href="/arya.png"/>
         <link href="\styles.css" type="text/css" rel="stylesheet"/>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('#top').load("top.html");
+		});
+	</script>
 </head>
 <body>
 
-<embed type="text/html" src="top.html" style="min-height:250px;width:100%;">
-
+<div id="top"></div>
+	
 <p>I am currently working on distributed systems, graph theory, theory of computation. My advisor is <a href="http://www.cse.msu.edu/~sandeep/"><u>Professor Sandeep S Kulkarni</u></a>.
 <p>During my undergraduate, I dealt with software projects, projects based on embedded systems, intelligence, and analysis. I instructed over software development, embedded systems (arduino, atmega, raspberry), and programming (Java, Python, C, C++).
 <p>I am also interested in modelling of natural systems, particularly in computational biology and applications of computer science in healthcare, agriculture.
