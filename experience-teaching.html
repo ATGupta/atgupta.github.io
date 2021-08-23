@@ -1,50 +1,22 @@
 <!DOCTYPE html>
 <html>
-	<link href="\styles.css" type="text/css" rel="stylesheet"/>
-    <head>
-    	<title>Arya T Gupta</title>
-        <link rel="shortcut icon" href="/arya.png"/>
-        
-    </head>
-    <body>
-        <div id="header">
-        	<table style="width:90%">
-        		<tbody>
-        			<tr>
-        				<td>
-        					<a  title="Arya T Gupta" href="\">
-                				<img src="/arya.png" id="headerImage" style="height: 132px; width: 132px">
-            				</a>
-            			<td>
-            				<h1 style="text-align: center">
-                				ARYA TANMAY GUPTA
-            				</h1>
-        			<td>
-        				<a  title="MSU" href="\">
-                			<img src="/msu.jpg" id="headerImage" style="height: 132px; width: 132px">
-            				</a>
-        			<td>
-        				<a  title="DU" href="\">
-                			<img src="/du.png" id="headerImage" style="height: 132px; width: 132px">
-            				</a>
-            	</tbody>
-            </table>
-        </div>
-        
-        <div id="nav">
-            <ul>
-                <li>
-                    <a href="\">Home</a>
-                </li>
-		<li>
-                	<a href="/articles.html">Articles</a>
-                </li>
-		<li>
-               		<a href="experience-teaching.html">Teaching Experience</a>
-		</li>
-            </ul>
-        </div>
-        <p></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$('#brain').load("brain.html");
+		$('#top').load("top.html");
+		$('#bottom').load("bottom.html");
+	});
+</script>
+<head>
+	<div id="brain"></div>
+        <link href="\styles.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+	<div id="top"></div>
+	
 	<p>
 	<h2>My Teaching Experience</h2>
 	<div id="curtain" onclick="myFunction(this)"><p>1. <b><i>Graduate Teaching Assistant</i></b>, USA Public Land Grant, Michigan State University. &#9663;</p>
@@ -127,8 +99,5 @@ function myFunction(id) {
 </script>
 
 </body>
-<footer style="text-align: center">
-	This website runs best on the latest version of Google Chrome. &#169; A T Gupta
-    	<p>
-</footer>
+<footer id="bottom" style="text-align: center"></footer>
 </html>
