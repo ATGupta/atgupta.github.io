@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<link href="\styles.css" type="text/css" rel="stylesheet"/>
+    <head>
+    	<title>Arya T Gupta</title>
+        <link rel="shortcut icon" href="/arya.png"/>
+        
+    </head>
+    <body>
+        <div id="header">
+        	<table style="width:90%">
+        		<tbody>
+        			<tr>
+        				<td>
+        					<a  title="Arya T Gupta" href="\">
+                				<img src="/arya.png" id="headerImage" style="height: 132px; width: 132px">
+            				</a>
+            			<td>
+            				<h1 style="text-align: center">
+                				ARYA TANMAY GUPTA
+            				</h1>
+        			<td>
+        				<a  title="MSU" href="\">
+                			<img src="/msu.jpg" id="headerImage" style="height: 132px; width: 132px">
+            				</a>
+        			<td>
+        				<a  title="DU" href="\">
+                			<img src="/du.png" id="headerImage" style="height: 132px; width: 132px">
+            				</a>
+            	</tbody>
+            </table>
+        </div>
+        
+        <div id="nav">
+            <ul>
+                <li>
+                    <a href="\">Home</a>
+                </li>
+		<li>
+                	<a href="/articles.html">Articles</a>
+                </li>
+		<li>
+               		<a href="experience-teaching.html">Teaching Experience</a>
+		</li>
+            </ul>
+        </div>
+        <p></p>
+	<p>
+	<h2>My Teaching Experience</h2>
+	<div id="curtain" onclick="myFunction(this)"><p>1. <b><i>Graduate Teaching Assistant</i></b>, USA Public Land Grant, Michigan State University. &#9663;</p>
+
+		<span id="curtainText" style="display: none;">
+		<p>
+			&emsp; September 2020 till date
+			<br>&emsp;
+			<br>&emsp; &emsp; (1) Fall 2020: CSE-231
+			<br>&emsp; &emsp; (2) Spring 2021: CSE 231
+			<br>&emsp; &emsp; (3) Summer 2021 (session 1): CSE 232
+			<br>&emsp; &emsp; (4) Fall 2021: CSE 260, CSE 835
+			<br>&emsp;
+			<small>
+				<br>&emsp; &emsp; &emsp; &emsp; CSE 231 = Introduction to programming I (Python)
+				<br>&emsp; &emsp; &emsp; &emsp; CSE 232 = Introduction to programming II (C++)
+				<br>&emsp; &emsp; &emsp; &emsp; CSE 260 = Discrete Structures in Computer Science
+				<br>&emsp; &emsp; &emsp; &emsp; CSE 835 = Algorithmic Graph Theory
+			</small>
+		</p>
+		</span>
+	</div>
+	
+	<div id="curtain" onclick="myFunction(this)"><p>2. <b><i>Laboratory Instructor, Teaching Assistant</i></b>, Govt. of India PPP, Indian Institute of Information Technology Vadodara. &#9663;</p>
+
+		<span id="curtainText" style="display: none;">
+		<p>
+			&emsp; August 2018, to July 2020
+			<br>&emsp;
+			<br>&emsp; &emsp; (1) Autumn 2018 (07 to 11) CS266.
+			<br>&emsp; &emsp; (2) Winter 2019 (01 to 04) CS162.
+			<br>&emsp; &emsp; (3) Autumn 2019 (07 to 11) CS263.
+			<br>&emsp; &emsp; (4) Winter 2020 (01 to 04) MA114.
+			<br>&emsp;
+			<small>
+				<br>&emsp; &emsp; &emsp; &emsp; CS266 = Operating Systems Laboratory (BTech CSE 3rd sem.)
+				<br>&emsp; &emsp; &emsp; &emsp; CS162 = Introduction to Data Structures Laboratory (BTech CSE and BTech IT 2nd sem.)
+				<br>&emsp; &emsp; &emsp; &emsp; CS263 = Design and Analysis of Algorithms Laboratory (BTech CSE and BTech IT 3rd sem.)
+				<br>&emsp; &emsp; &emsp; &emsp; MA114 = Introduction to Discrete Mathematics (Tutorial) (BTech CSE and BTech IT 2nd sem.)
+			</small>
+		</p>
+		</span>
+	</div>
+	<div id="curtain" onclick="myFunction(this)"><p>3. <b><i>Teaching Assistant</i></b>, Govt. of India, University of Delhi, Ramanujan College, Dept. of Computer Science. &#9663;</p>
+
+		<span id="curtainText" style="display: none;">
+		<p>
+			&emsp; July 2016 - June 2017 (1 year)
+			<br>&emsp;
+			<br>&emsp; &emsp; (1) (2016-07 to 2016-11): B. Sc. Computer Science 1st semester over Programming Fundamentals in Computer Science using C++.
+			<br>&emsp; &emsp; (2) (2017-01 to 2017-04): B. Sc. Computer Science 2nd semester over OOPS and Java.
+		</p>
+		</span>
+	</div>
+	<div id="curtain" onclick="myFunction(this)"><p>4. <b><i>Workshops organized/conducted</i></b>. &#9663;</p>
+
+		<span id="curtainText" style="display: none;">
+		<p>
+			<br>&#8226; &emsp; Embedded systems (as Member at Centre for Robotics and Artificial Intelligence)
+			<br>&#8226; &emsp; Software development, website development (as President at the Quicksort Society)
+			<br>&#8226; &emsp; Workshop series on Java-core.
+		</p>
+		</span>
+	</div>
+
+<script>
+function myFunction(id) {
+  var x = id.querySelector("#curtainText");
+  let str = x.textContent;
+  var index = str.indexOf('.', str.indexOf('.') + 1) + 1;
+  let str2 = str.substring(0, index);
+  if (x.style.display === "none") {
+	x.style.display = "block";
+	id.innerHTML = id.innerHTML.replace('▿', '▵');
+  } else {
+	x.style.display = "none";
+	id.innerHTML = id.innerHTML.replace('▵', '▿');
+  }
+}
+</script>
+
+</body>
+<footer style="text-align: center">
+	This website runs best on the latest version of Google Chrome. &#169; A T Gupta
+    	<p>
+</footer>
+</html>
