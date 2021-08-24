@@ -1,0 +1,46 @@
+<h2>Working / Other Academic Experience</h2>
+  <div id="curtain" onclick="myFunction(this)"><p>5. <b><i>Welcome to Yamuna Biodiversity Park</i></b> (software: Java) (as Software Developer, Govt.of Delhi, Yamuna Biodiversity Park). &#9663;</p>
+
+		<span id="curtainText" style="display: none;">
+		<p>
+			&emsp; September 2015 to December 2015
+			<br>&emsp; Supervisor: Dr Faiyaz A Khudsar, Scientist In-charge, Yamuna Biodiversity Park, Delhi Development Authority, Govt. of NCT of Delhi.
+			<br>&emsp; 2 members.
+				<br>&emsp; &emsp; A software for the touch screens of Yamuna Biodiversity Park, DDA, Govt. of NCT of Delhi. To display all the information – text, photos and videos – of the park and all the creature species who live there – to the visitors and researchers who come to visit there.
+		</p>
+		</span>
+	</div>
+
+1. President at the Quicksort Society, Govt. of India, University of Delhi, Ramanujan College, Dept. of Computer Science, July 2016 - June 2017 (1 year).
+2. Member at Centre for Robotics and Artificial Intelligence, Govt. of India, University of Delhi, Ramanujan College, July 2015 - June 2017 (2 years).
+3. Software Developer, Govt. of India, University of Delhi, Ramanujan College. March 2014 - August 2016 (2 years 6 months).
+4. Research Trainee, Govt. of India, Defence Research and Development Organisation, Scientific Analysis Group, June 2015 - December 2015 (7 months).
+5. Software Developer, Govt.of Delhi, Yamuna Biodiversity Park, June 2014 - July 2014 (2 months).
+
+<h2>Other Technical Experience</h2>
+1. Supervisor at Turington 2017 technical fest, Govt. of India, University of Delhi, Ramanujan College, Dept. of Computer Science, December 2016 - March 2017 (4 months).
+2. Technical Head at Turington (Intercollege) 2014 technical fest, Govt. of India, University of Delhi, Ramanujan College, Dept. of Computer Science, March 2014 - April 2014 (1 month).
+3. Organizer at Turington (Intracollege) 2014 technical fest, Govt. of India, University of Delhi, Ramanujan College, Dept. of Computer Science, December 2013 - January 2014 (2 months).
+
+<h2>Volunteer Experience</h2>
+1. Member at Centre for Ethics and Values, Govt. of India, University of Delhi, Ramanujan College, February 2014 - March 2015 (1 year 2 months).
+2. Core Member at the Foundation Day, Govt. of India, University of Delhi, Ramanujan College, December 2014 (1 month).
+3. Volunteer at Tatva - the Ecology Club, Govt. of India, University of Delhi, Ramanujan College, December 2013 - September 2014 (9 months).
+4. Volunteer at Antargyan 2013 cultural fest, Govt. of India, University of Delhi, Ramanujan College, Dept. of Science and Life, October 2013 (1 month).
+5. Head Boy, Holy Family Generalate, Holy Family Convent School, February 2012 - January 2013 (1 year).
+	
+	<script>
+	function myFunction(id) {
+	  var x = id.querySelector("#curtainText");
+	  let str = x.textContent;
+	  var index = str.indexOf('.', str.indexOf('.') + 1) + 1;
+	  let str2 = str.substring(0, index);
+	  if (x.style.display === "none") {
+		x.style.display = "block";
+		id.innerHTML = id.innerHTML.replace('▿', '▵');
+	  } else {
+		x.style.display = "none";
+		id.innerHTML = id.innerHTML.replace('▵', '▿');
+	  }
+	}
+	</script>
