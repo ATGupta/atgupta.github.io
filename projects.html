@@ -135,3 +135,23 @@
 		</p>
 		</span>
 	</div>
+	
+	<script>
+	function myFunction(id) {
+	  var x = id.querySelector("#curtainText");
+	  let str = x.textContent;
+	  var index = str.indexOf('.', str.indexOf('.') + 1) + 1;
+	  let str2 = str.substring(0, index);
+	  if (x.style.display === "none") {
+		x.style.display = "block";
+		id.innerHTML = id.innerHTML.replace('▿', '▵');
+	  } else {
+		x.style.display = "none";
+		id.innerHTML = id.innerHTML.replace('▵', '▿');
+	  }
+	}
+	</script>
+
+</body>
+<footer id="bottom"></footer>
+</html>
