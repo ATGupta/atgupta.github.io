@@ -118,7 +118,7 @@ table {
     margin: 0 auto;
 }
 
-footer {
+#bottom {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
