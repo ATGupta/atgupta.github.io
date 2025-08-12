@@ -4,37 +4,76 @@
 
 <script>
 	$(document).ready(function(){
-		$('#brain').load("brain.html");
+		$('#head').load("head.html");
 		$('#top').load("top.html");
 		$('#bottom').load("bottom.html");
 	});
 </script>
 <head>
-	<link rel="shortcut icon" href="/arya.png"/>
-	<div id="brain"></div>
-        <link href="\styles.css" type="text/css" rel="stylesheet"/>
+	<link rel="shortcut icon" href="/~atgupta/favicon.png"/>
+	<div id="head"></div>
 </head>
 <body>
 
 	<div id="top"></div>
 	
 	<p>
+	<h2>Teaching Professional Development</h2>
+	<div id="curtain" onclick="myFunction(this)"><p><b>Workshops Attended</b> &#9663;</p>
+	
+		<span id="curtainText" style="display: none;">
+		<p>
+			&emsp; Workshops organized by the Graduate School, Michigan State University
+			<br>&emsp; &emsp; &#8226; &emsp; Teaching Philosophy  (periodically -- yearly)
+			<br>&emsp; &emsp; &#8226; &emsp; DEI statement (periodically -- yearly)
+			<br>&emsp; &emsp; &#8226; &emsp; Syllabus/course design  (periodically -- yearly)
+			<br>&emsp; &emsp; &#8226; &emsp; D2L/course management (periodically -- yearly)
+			<br>&emsp; Workshops organized as part of FAST fellowship programme, The Graduate School, Michigan State University
+			<br>&emsp; &emsp; &#8226; &emsp; IRB applications (Fall 2023)
+			<br>&emsp; &emsp; &#8226; &emsp; Teaching Philosophy (Fall 2023)
+			<br>&emsp; &emsp; &#8226; &emsp; Learning Goals and Blooms Taxonomy (Fall 2023)
+			<br>&emsp; &emsp; &#8226; &emsp; Diversity Statemet (Fall 2023)
+			<br>&emsp; &emsp; &#8226; &emsp; Academic jobs and academic life (Spring 2023)
+		</p>
+		</span>
+	</div>
+	
+	<p>
+	<div id="curtain" onclick="myFunction(this)"><p><b>Workshops organized/conducted or co-organized/co-conducted</b> &#9663;</p>
+
+                <span id="curtainText" style="display: none;">
+                <p>
+                        &emsp; &#8226; &emsp; Metacognition (Spring 2022)
+			<br>&emsp; &#8226; &emsp; D2L management (Fall 2023)
+                </p>
+                </span>
+        </div>
+	
+	
+	<p>
 	<h2>My Teaching Assignments</h2>
 	<div id="curtain" onclick="myFunction(this)"><p>1. <b><i>Graduate Teaching Assistant</i></b>, USA Public Land Grant, Michigan State University. &#9663;</p>
-
+	
 		<span id="curtainText" style="display: none;">
 		<p>
 			&emsp; August 2020 till date
 			<br>&emsp;
-			<br>&emsp; &emsp; (1) Fall 2020: CSE-231
-			<br>&emsp; &emsp; (2) Spring 2021: CSE 231
-			<br>&emsp; &emsp; (3) Summer 2021 (session 1): CSE 232
-			<br>&emsp; &emsp; (4) Fall 2021: CSE 260, CSE 835
+			<br>&emsp; &emsp; <b>Teaching Assistant III</b>
+			<br>&emsp; &emsp; &emsp; (8) Summer 2023 (session 1): CSE 260
+			<br>&emsp; &emsp; <b>Teaching Assistant II</b>
+			<br>&emsp; &emsp; &emsp; (7) Spring 2023: CSE 450
+			<br>&emsp; &emsp; &emsp; (6) Fall 2022: CSE 260, CSE 835
+			<br>&emsp; &emsp; &emsp; (5) Spring 2022: CSE 231
+			<br>&emsp; &emsp; &emsp; (4) Fall 2021: CSE 260, CSE 835
+			<br>&emsp; &emsp; &emsp; (3) Summer 2021 (session 1): CSE 232
+			<br>&emsp; &emsp; &emsp; (2) Spring 2021: CSE 231
+			<br>&emsp; &emsp; &emsp; (1) Fall 2020: CSE-231
 			<br>&emsp;
 			<small>
 				<br>&emsp; &emsp; &emsp; &emsp; CSE 231 = Introduction to programming I (Python)
 				<br>&emsp; &emsp; &emsp; &emsp; CSE 232 = Introduction to programming II (C++)
 				<br>&emsp; &emsp; &emsp; &emsp; CSE 260 = Discrete Mathematics for Computer Science
+				<br>&emsp; &emsp; &emsp; &emsp; CSE 450 - Translation of Programming Languages 
 				<br>&emsp; &emsp; &emsp; &emsp; CSE 835 = Algorithmic Graph Theory
 			</small>
 		</p>
@@ -47,10 +86,10 @@
 		<p>
 			&emsp; August 2018, to July 2020 (2 years)
 			<br>&emsp;
-			<br>&emsp; &emsp; (1) Autumn 2018 (07 to 11) CS266.
-			<br>&emsp; &emsp; (2) Winter 2019 (01 to 04) CS162.
-			<br>&emsp; &emsp; (3) Autumn 2019 (07 to 11) CS263.
 			<br>&emsp; &emsp; (4) Winter 2020 (01 to 04) MA114.
+			<br>&emsp; &emsp; (3) Autumn 2019 (07 to 11) CS263.
+			<br>&emsp; &emsp; (2) Winter 2019 (01 to 04) CS162.
+			<br>&emsp; &emsp; (1) Autumn 2018 (07 to 11) CS266.
 			<br>&emsp;
 			<small>
 				<br>&emsp; &emsp; &emsp; &emsp; CS266 = Operating Systems Laboratory (BTech CSE 3rd sem.)
@@ -67,8 +106,8 @@
 		<p>
 			&emsp; July 2016 - June 2017 (1 year)
 			<br>&emsp;
-			<br>&emsp; &emsp; (1) (2016-07 to 2016-11): B. Sc. Computer Science 1st semester over Programming Fundamentals in Computer Science using C++.
 			<br>&emsp; &emsp; (2) (2017-01 to 2017-04): B. Sc. Computer Science 2nd semester over OOPS and Java.
+			<br>&emsp; &emsp; (1) (2016-07 to 2016-11): B. Sc. Computer Science 1st semester over Programming Fundamentals in Computer Science using C++.
 		</p>
 		</span>
 	</div>
